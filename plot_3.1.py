@@ -11,9 +11,9 @@ y = np.arange(-5, 5+delta, delta)
 
 X, Y = np.meshgrid(x, y)
 
-f = np.exp(X**2-Y**2)
+f = -np.cos(X) + Y + 1
 
 plt.contour(X,Y,f,100)
 plt.colorbar()
 plt.xlim(-6,6)
-plt.savefig('3_3.png')
+plt.savefig('3_1.png')
